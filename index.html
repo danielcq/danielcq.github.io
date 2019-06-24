@@ -4,19 +4,25 @@
 <head>
 	<title>Megakone</title>
 
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.google.com/p/css3-mediaqueries-js">
+    <script src="js/jquery-1.7.2.min.js"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quattrocento+Sans" rel="stylesheet">
-	
-	<link rel="stylesheet" href="css/bonagastro.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
 	<link id="favicon" href="img/prato2.png" rel="icon" type="image/x-icon">
 </head>
 
 <body>
+
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 
@@ -36,31 +42,27 @@
 			</ul>
 
 		</div>
-	</nav>
+	</nav><br><br><br><br><br>
 
-	<!-- Corpo da página -->
-	<div class="container">
-
-
-		<div class="row">
-			<div class="container">
-				<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-					<div>
-						<h2 id="o-bona" class="text-uppercase">Venha conhecer Megakone Megakone</h2>
-						<p>A comida da infância, a comida da fazenda, a comida que remete a coisas boas. A gastronomia é uma experiência que brinca
-							com os sentidos e que nos transporta aos mais diferentes lugares.</p>
-						<p> Foi a busca por pratos saborosos e sem exagero que levou o Bona a encontrar a astrosimplicidade - conceito criado pelos
-							sócios Kike Moraes e Raul Florenza. Como resultado desse encontro, o Bona cria pratos que exaltam a riqueza dos alimentos
-							e que relembram a gastronomia simples, porém com qualidade e técnica apurada.</p>
-					</div>
-				</div>
-			</div>
+	 <div id="meuSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#meuSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#meuSlider" data-slide-to="1"></li>
+            <li data-target="#meuSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active"><img src="img/01.jpg"  alt="Slider 1" style="margin:0 auto;"/></div>
+            <div class="item"><img src="img/02.jpg" alt="Slide 2" style="margin:0 auto;" /></div>
+            <div class="item"><img src="img/03.jpg" alt="Slide 3" style="margin:0 auto;"/></div>
+        </div>
+        <a class="left carousel-control" href="#meuSlider" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#meuSlider" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    <br><br>	
 		</div>
 
+		
 
-
-
-	</div>
 
 </body>
 
