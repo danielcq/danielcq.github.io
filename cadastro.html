@@ -14,6 +14,7 @@
     <script src="js/jquery-1.7.2.min.js"></script>
 
     <link href="css/lightbox.css" rel="stylesheet" />
+    <link href="css/estilo.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -22,7 +23,7 @@
 </head>	
 
 <body>
-	<!-- Barra de navegação superior -->
+
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 
@@ -41,31 +42,36 @@
 			</ul>
 
 		</div>
-	</nav>
+	</nav><br><br><br><br><br><br><br><br><br>
 
-	<!-- Corpo da página -->
-	<div class="container">
-
-
-		<div class="row">
-			<div class="container">
-				<div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-					<div>
-						<h2 id="o-bona" class="text-uppercase">Kike Moraes</h2>
-						<p>Restaurateur à frente do Bona, Kike Moraes possui vocação para negócios na área gastronômica. Filho de Carlos Moraes,
-							um dos sócios do badalado restaurante Spot, trabalhava na área de consultoria quando sua irmã, a chef Marina Moraes,
-							inaugurou o Gardênia, em Pinheiros. Formado em economia, Kike naturalmente passou a cuidar das finanças do restaurante
-							da irmã, estendendo seu trabalho à segunda unidade aberta: o Gardênia Alphaville.
-						</p>
-						<p>
-							Hoje, acumulando mais de nove anos de experiência na área, o restaurateur está à frente também do Bona, restaurante batizado
-							com o apelido de seu pai. Além de empresário, Kike também é surfista e músico, e no Bona consegue aliar seus interesses
-							por gastronomia a esta outra última paixão: uma vez por mês leva bandas de jazz e folk, incluindo sua própria, para
-							ambientar o salão do restaurante..</p>
-					</div>
-				</div>
-			</div>
+	 <div class="signup-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+		<h2>Cadastro</h2>
+		<p class="hint-text">Crie sua conta</p>
+        <div class="form-group">
+			<div class="row">
+				<div class="col-xs-6"><input type="text" class="form-control" name="nome" placeholder="Nome" required="required"></div>
+				<div class="col-xs-6"><input type="text" class="form-control" name="sobrenome" placeholder="Sobrenome" required="required"></div>
+			</div>        	
+        </div>
+        <div class="form-group">
+        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Senha" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="confirm_password" placeholder="Confirme sua Senha" required="required">
+        </div>        
+        <div class="form-group">
+			<label class="checkbox-inline"><input type="checkbox" required="required"> Eu aceito os <a href="#">Termos de Uso</a> &amp; <a href="#">Privacidade</a></label>
 		</div>
+		<div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Cadastrar</button>
+        </div>
+    </form>
+	
+</div>
 
 
 
