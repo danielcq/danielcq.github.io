@@ -157,6 +157,9 @@ section .section-title {
     margin-bottom: 10px;
 }
 
-
+.modal.and.carousel {
+  position: fixed;
 }
+}
+
 
