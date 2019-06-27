@@ -3,6 +3,17 @@
 		background: 000000;
 	
 	}
+
+	.galeria img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.img-responsive{
+	margin-left: 5%;
+}
     .form-control{
 		height: 40px;
 		box-shadow: none;
@@ -156,6 +167,8 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
 }
+
+
 
 .modal.and.carousel {
   position: fixed;
