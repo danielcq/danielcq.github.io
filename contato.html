@@ -83,7 +83,7 @@
  map: map
  });
  var infowindow = new google.maps.InfoWindow({
- content: '<p>Endereço: Rua: Morais e Castro, n°: 722<br> Bairro: Alto dos Passos' + marker.getPosition() + '</p>'
+ content: '<p>Endereço:<br>Rua: Morais e Castro, n°: 722<br> Bairro: Alto dos Passos' + marker.getPosition() + '</p>'
  });
  google.maps.event.addListener(marker, 'click', function() {
  infowindow.open(map, marker);
