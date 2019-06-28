@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Megakone</title>
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.google.com/p/css3-mediaqueries-js">
+    <script src="js/jquery-1.7.2.min.js"></script>
+
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link href="css/estilo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+	<link id="favicon" href="img/prato2.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger" 
+				data-toggle="collapse" data-target="#bona-navbar">
+                </button>
+				<a class="navbar-brand" href="index.html">Megakone</a>
+			</div>
+
+			<ul id="bona-navbar" class="nav navbar-nav navbar-right collapse navbar-collapse" data-toggle="collapse" data-target="#bona-navbar">
+				<li><a href="index.html">Megakone</a></li>
+				<li><a href="cardapio.html">Funcionamento</a></li>
+				<li><a href="cadastro.html">Cadastro</a></li>
+				<li><a href="eventos.html">Eventos</a></li>
+				<li class="active"><a href="contato.html">Contato</a></li>
+			</ul>
+
+		</div>
+	</nav><br><br><br><br>
+	<address>
+    <div class="container">
+        <h1>Contato</h1>
+    	<p>Rua: Morais e Castro <a href="https://danielcq.github.io/">danielcq.github.io</a>.<br>
+    Bairro: Alto dos Passos, n°: 722 <a href="mailto:danielcdequeiroz@gmail.com">contate o administrador do site</a>.<br>
+    Tel: (32) 99106-3341<br>
+    Brasil<br>
+    </p>
+</div>
+  </address>	
+ <style>
+ #map {
+ height: 100%;
+ }
+ /* Opcional: deixa o mapa ocupando toda a tela do navegador */
+ html, body {
+ height: 85%;
+ width: : 85%;
+ margin: 0;
+ padding: 0;
+ }
+ </style>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmE9gl1VqeS5qIaeP-HxTMFW26zBsiHDQ"></script>
+ <script>
+ var map;
+ function initialize() {
+ var mapOptions = {
+ zoom: 15, // zoom do mapa
+ center: {lat: -21.773509, lng: -43.350780} // latitude e longitude inicial do mapa.
+ };
+ map = new google.maps.Map(document.getElementById('map'),
+ mapOptions);
+ var marker = new google.maps.Marker({ 
+ position: {lat: -21.773509, lng: -43.350780}, // latitude e longitude do marcador (pin), normalmente é o mesmo do mapa mostrado na linha 24.
+ map: map
+ });
+ var infowindow = new google.maps.InfoWindow({
+ content: '<p>Marker Location:' + marker.getPosition() + '</p>'
+ });
+ google.maps.event.addListener(marker, 'click', function() {
+ infowindow.open(map, marker);
+ });
+ }
+ google.maps.event.addDomListener(window, 'load', initialize);
+ </script>
+ <div id="map"></div><br><br><br><br>
+
+ <section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Megakone</h5>
+						<ul class="list-unstyled quick-links">
+						<li><a href="index.html"><i class="fa fa-angle-double-right"></i>Megakone</a></li>
+						<li><a href="cardapio.html"><i class="fa fa-angle-double-right"></i>Funcionamento</a></li>
+						<li><a href="cadastro.html"><i class="fa fa-angle-double-right"></i>Cadastro</a></li>
+						<li><a href="eventos.html"><i class="fa fa-angle-double-right"></i>Eventos</a></li>
+						<li><a href="contato.html"><i class="fa fa-angle-double-right"></i>Contato</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					
+					
+				</div>
+				
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Endereço</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Rua: Morais e Castro</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					© Copyright 2001-2019 Copyright.com.br - All Rights Reserved - Legal
+				</div>
+				</hr>
+			</div>	
+		</div>
+	</section>
+
+		
+ </body>
+</html>
