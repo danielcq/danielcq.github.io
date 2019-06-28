@@ -47,10 +47,13 @@
 	<address>
     <div class="container">
         <h1>Contato</h1>
-    	<p>Rua: Morais e Castro <a href="https://danielcq.github.io/">danielcq.github.io</a>.<br>
-    Bairro: Alto dos Passos, n°: 722 <a href="mailto:danielcdequeiroz@gmail.com">contate o administrador do site</a>.<br>
-    Tel: (32) 99106-3341<br>
-    Brasil<br>
+    	<p>
+    		Site:<a href="https://danielcq.github.io/">danielcq.github.io</a>.<br>
+    		Rua: Morais e Castro, n°: 722<br> 
+            Bairro: Alto dos Passos<br> 
+            <a href="mailto:danielcdequeiroz@gmail.com">Contate o administrador do site</a>.<br>
+            Tel: (32) 99106-3341<br>
+            Brasil<br>
     </p>
 </div>
   </address>	
@@ -81,7 +84,7 @@
  map: map
  });
  var infowindow = new google.maps.InfoWindow({
- content: '<p>Marker Location:' + marker.getPosition() + '</p>'
+ content: '<p>Endereço: Rua: Morais e Castro, n°: 722<br> Bairro: Alto dos Passos' + marker.getPosition() + '</p>'
  });
  google.maps.event.addListener(marker, 'click', function() {
  infowindow.open(map, marker);
