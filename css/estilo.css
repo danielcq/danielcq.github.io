@@ -4,6 +4,12 @@
 	
 	}
 
+	.endereco:
+	{
+		margin-left: 5%;
+		text-align: center;
+	}
+
 	.galeria img:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
