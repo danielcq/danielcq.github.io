@@ -1,4 +1,4 @@
-  *{margin:0;
+*{margin:0;
 padding:0;
 box-sizing: border-box;
 font-family: 'Segoe UI', sans-serif;
@@ -42,6 +42,17 @@ body {
   padding-left: 2.5rem;
 }
 
+.menu-toggle {
+  display: none; /* Esconde o checkbox por padrão */
+}
+
+.hamburger {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .nav-links{
   display:flex;
   gap: 2rem;
@@ -49,11 +60,12 @@ body {
 }
 
 .nav-links a{
-  color:var(--text);
+  color:white;
   text-decoration: none;
   font-weight:500;
   transition:all 0.3s ease;
   position:relative;
+
 }
 
 .nav-links a::after{
@@ -69,6 +81,12 @@ body {
 
 .nav-links a:hover::after{
   width:100%;
+}
+
+
+
+#menu-toggle, .hamburger {
+    display: none;
 }
 
 .hero{
@@ -121,7 +139,7 @@ body {
   max-width: 600px;
 }
 
-.cta-button:hover{
+.cta-button{
   display: inline-block;
   padding :1rem 2rem;
   background: linear-gradient(45deg, var(--accent), #27ae60);
@@ -194,6 +212,23 @@ footer{
   transform: translateY(-3px);
 }
 
+@media (max-width: 675px) {
+
+    nav .nav-list {
+        display: grid;
+        position: absolute;
+        background: #404040;
+        width: 100%;
+        top: 75px;
+        right: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: .6s;
+    }
+}
+
+
+
 @media(max-width: 768px){
   .hero{
     flex-direction: column;
@@ -205,18 +240,63 @@ footer{
   margin-bottom: 3rem;
  } 
 
+#menu-toggle:checked ~ .nav-links {
+  display: block; /* Exibe os links */
+  position: absolute; /* Para sobrepor outros elementos */
+  top: 100%;
+  right: 0;
+  width: 100%;
+  background-color: #000;
+}
+
+.hamburger {
+        display: block; /* Exibir o ícone do hambúrguer */
+        font-size: 24px;
+        cursor: pointer;
+        /* Outros estilos para o hambúrguer */
+    }
+
+.nav-links a{
+  color:white;
+  text-decoration: none;
+  font-weight:500;
+  transition:all 0.3s ease;
+  position:relative;
+  display: flex; /* Transforma o contêiner num container flexível */
+  justify-content: center;
+}    
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  display: none; /* Oculta os links por padrão */
+}
+
+.nav-links a::after{
+  content:'';
+  position: absolute;
+  bottom: -3px;
+  left:193px;
+  widht:0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after{
+  width:20%;
+}
+
  .profile-img{
   width: 280px;
   height: 280px;
  }
 
- .nav-links{
-  display: none;
- }
 
  .logo{
   font-size: 1.5rem;
   padding-left: 2rem;
  }
-}
+
 
