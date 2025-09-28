@@ -277,7 +277,7 @@ footer{
   content:'';
   position: absolute;
   bottom: -3px;
-  left:170px;
+  left:120px;
   widht:0;
   height: 2px;
   background: var(--accent);
