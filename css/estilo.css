@@ -285,7 +285,7 @@ footer{
 }
 
 .nav-links a:hover::after{
-  width:20%;
+  width:50%;
 }
 
  .profile-img{
