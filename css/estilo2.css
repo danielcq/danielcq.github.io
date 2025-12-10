@@ -14,13 +14,7 @@ font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background-color: var(--dark-bg);
-  color: var(--text);
-  line-height:1.6;
-  overflow-x: hidden;
-}
-
-#map {
+ #map {
   height: 100%;
 }
 /* Opcional: deixa o mapa ocupando toda a tela do navegador */
@@ -30,6 +24,11 @@ body {
   width: 85%;
   margin: 0;
   padding: 0;
+}
+  background-color: var(--dark-bg);
+  color: var(--text);
+  line-height:1.6;
+  overflow-x: hidden;
 }
 
 .navbar{
